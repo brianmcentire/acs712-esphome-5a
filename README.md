@@ -47,7 +47,7 @@ sensor:
       name: "Watts"
       accuracy_decimals: 1
 ```
-Expects ACS712 module Out pin to connect to GPIO pin 34. Additionally connect a 100 uF capacitor between pin 34 and GND for filtering.
+Expects ACS712 module Out pin to connect to GPIO pin 34. Additionally connect a 100 nF capacitor between pin 34 and GND for filtering.
 
 The YAML above also includes a DAC output on pin 25. This can be connected to pin 34 for testing/verifying the code works without an ACS712 module connected. Vary the slider in Homeassistant from 0 to .9 to see output values from 0 to 6 Amps. Very low output values like .01 will produce readings of .5 A while .9 will produce 6 A reading.
 
